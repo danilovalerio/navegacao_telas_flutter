@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class TelaSecundaria extends StatefulWidget {
   @override
-  _TelaSecundariaState createState() => TelaSecundariaState();
+  _TelaSecundariaState createState() => _TelaSecundariaState();
 }
 
 class _TelaSecundariaState extends State<TelaSecundaria>{
@@ -23,5 +23,4 @@ class _TelaSecundariaState extends State<TelaSecundaria>{
       ),
     );
   }
-
 }
