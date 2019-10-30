@@ -3,6 +3,10 @@ import 'package:telas_navegacao_flutter_app/TelaSecundaria.dart';
 
 void main(){
   runApp(MaterialApp(
+    initialRoute: "/", //rota inicial
+    routes: {
+      "/secundaria" : (context) => TelaSecundaria(), //rota nomeada
+    },
     home: TelaPrincipal(),
     debugShowCheckedModeBanner: false,
   ));
@@ -30,13 +34,8 @@ class _TelaPrincipalState extends State<TelaPrincipal>{
               child: Text("Ir para segunda tela"),
               padding: EdgeInsets.all(15),
               onPressed: (){
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => TelaSecundaria(valor: "Valor da tela 1")
-                    ));
+                Navigator.pushNamed(context, "/secundaria");
               },
-
             )
           ],
         ),
