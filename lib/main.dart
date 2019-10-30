@@ -4,6 +4,7 @@ import 'package:telas_navegacao_flutter_app/TelaSecundaria.dart';
 void main(){
   runApp(MaterialApp(
     home: TelaPrincipal(),
+    debugShowCheckedModeBanner: false,
   ));
 }
 
@@ -32,7 +33,7 @@ class _TelaPrincipalState extends State<TelaPrincipal>{
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => TelaSecundaria()
+                      builder: (context) => TelaSecundaria(valor: "Valor da tela 1")
                     ));
               },
 
