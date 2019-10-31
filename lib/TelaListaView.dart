@@ -47,6 +47,20 @@ class _TelaListaViewState extends State<TelaListaView> {
                           ),
                           content: Text(_itens[indice]["descricao"]),
                           backgroundColor: Color.fromRGBO(255, 255, 255, 0.9),
+                          actions: <Widget>[
+                            FlatButton(
+                              onPressed: (){
+                                Navigator.pop(context);
+                              },
+                              child: Text("Sim"),
+                            ),
+                            FlatButton(
+                              onPressed: (){
+                                Navigator.pop(context);
+                              },
+                              child: Text("Não"),
+                            )
+                          ],
                         );
                       });
                 },
