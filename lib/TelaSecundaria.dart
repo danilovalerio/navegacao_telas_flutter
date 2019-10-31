@@ -20,21 +20,24 @@ class _TelaSecundariaState extends State<TelaSecundaria>{
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Tela Principal"),
+        title: Text("Tela Secundária"),
         backgroundColor: Colors.blue,
       ),
       body: Container(
         padding: EdgeInsets.all(32),
         child: Column(
           children: <Widget>[
-            Text("Segunda tela! Valor passado: ${widget.valor}"),
-            RaisedButton(
-              child: Text("Ir para primeira tela"),
-              padding: EdgeInsets.all(15),
-              onPressed: (){
-                Navigator.pushNamed(context, "/");
-              },
-            )
+            Text("Segunda tela!"),
+            Padding(
+              padding: EdgeInsets.all(32),
+              child: RaisedButton(
+                child: Text("Tela lista"),
+                padding: EdgeInsets.all(15),
+                onPressed: (){
+                  Navigator.pushNamed(context, "/listaview");
+                },
+              ),
+            ),
           ],
         ),
       ),

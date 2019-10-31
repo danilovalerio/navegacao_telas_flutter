@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:telas_navegacao_flutter_app/TelaSecundaria.dart';
 
+import 'TelaListaView.dart';
+
 void main(){
   runApp(MaterialApp(
     initialRoute: "/", //rota inicial
     routes: {
       "/secundaria" : (context) => TelaSecundaria(), //rota nomeada
+      "/listaview" : (context) => TelaListaView()
     },
     home: TelaPrincipal(),
     debugShowCheckedModeBanner: false,
